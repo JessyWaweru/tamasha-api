@@ -25,7 +25,7 @@ if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 # --- CLERK SETTINGS ---
-CLERK_SECRET_KEY = os.environ.get('CLERK_SECRET_KEY', 'sk_test_rYwaWKLhneZjY4XppYaAt1xu164yPB4iwHoAZZdIJ2')
+CLERK_SECRET_KEY = os.environ.get('CLERK_SECRET_KEY', '')
 CLERK_JWKS_URL = os.environ.get('CLERK_JWKS_URL', 'https://current-thrush-1.clerk.accounts.dev/.well-known/jwks.json')
 
 # --- DJANGO REST FRAMEWORK ---
